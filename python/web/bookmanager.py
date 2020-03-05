@@ -16,9 +16,6 @@ app.config["SQLALCHEMY_DATABASE_URI"] = database_file
 
 db = SQLAlchemy(app)
 
-#app = Flask(__name__)
-
-#books =[]
 @app.route("/", methods=["GET", "POST"])
 def home():
     if request.form:
